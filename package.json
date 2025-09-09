@@ -1,0 +1,50 @@
+{
+  "name": "hajzi-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Hajzi - Yemen Hospitality Booking Platform",
+  "main": "src/server.js",
+  "type": "module",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-super-admin": "node scripts/createSuperAdmin.js",
+    "seed": "node scripts/seedData.js",
+    "seed-comprehensive": "node scripts/comprehensiveSeed.js",
+    "seed-room-bookings": "node scripts/seedRoomBookings.js",
+    "pm2:start": "pm2 start ecosystem.config.js --env production",
+    "pm2:stop": "pm2 stop hajzi-backend",
+    "pm2:restart": "pm2 restart hajzi-backend",
+    "pm2:logs": "pm2 logs hajzi-backend",
+    "pm2:status": "pm2 status"
+  },
+  "keywords": [
+    "hospitality",
+    "booking",
+    "yemen",
+    "hotels",
+    "api"
+  ],
+  "author": "Hajzi Team",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^4.21.2",
+    "helmet": "^8.1.0",
+    "joi": "^18.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.17.1",
+    "morgan": "^1.10.1",
+    "multer": "^2.0.2",
+    "validator": "^13.15.15"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "nodemon": "^3.1.10"
+  }
+}
