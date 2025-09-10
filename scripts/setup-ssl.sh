@@ -37,3 +37,4 @@ echo ""
 echo "🔥 For Let's Encrypt SSL (recommended for production):"
 echo "sudo apt update && sudo apt install certbot python3-certbot-nginx"
 echo "sudo certbot --nginx -d 217.171.146.67"
+

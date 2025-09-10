@@ -43,3 +43,4 @@ echo 🚀 Quick Solution: Update your frontend to use ngrok HTTPS URL
 echo Example: https://abc123.ngrok.io/api/v1 instead of http://217.171.146.67:5000/api/v1
 echo.
 pause
+

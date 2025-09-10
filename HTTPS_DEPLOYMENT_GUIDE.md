@@ -148,3 +148,4 @@ sudo ufw allow 80  # For HTTP redirect
 4. For production, set up proper SSL certificates with Let's Encrypt
 
 Your backend is now configured for HTTPS! 🎉
+
